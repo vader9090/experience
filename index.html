@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html style="background-color: darkgrey;">
+    <head >
+        <style >
+            div {
+                align-items: center;
+                background-color: rgba(150, 190, 118, 0.863);
+                width: 300px;
+                border: cyan;
+                padding: 30px;
+                margin: 60px;
+                
+            }
+        </style>
+        <script>
+            function validate()
+            {
+                var username=document.getElementById("username");
+                var password=document.getElementById("password");
+                if(username.value=="saikiran"&& password.value=="19212")
+                {
+                    alert("you are  being directed to new html page");
+                    return true;
+                }
+                else
+                {
+                    alert("check your password or username")
+                    return false;
+                }
+            
+
+            }
+           
+
+        </script>
+    </head>
+    <body style="text-align: center;">
+	
+	<br>
+    <br>
+    <div>
+	
+        <form style="text-align: center;" onsubmit="return validate();" action="successful.html">
+           <fieldset><legend><b>LOGIN PAGE</b></legend>
+            Username:
+            <input type="text" id="username">
+            <br>
+            <br>
+            password:
+            <input type="password" id="password">
+            <br>
+            <br>
+            <button type="submit">submit</button>
+        </fieldset>
+
+        </form>
+    </div>
+    </body>
+</html>
